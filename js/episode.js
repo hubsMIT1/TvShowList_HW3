@@ -31,7 +31,7 @@ class Episode {
         const overlaybox = document.createElement('div');
         const overlay_img = document.createElement('img');
         overlay_img.alt = "watched"
-        const checkimg = '../Assignment-2/images/check.png';
+        const checkimg = '../images/check.png';
 
         overlay_img.src = checkimg
         overlay.className = `overlay`
@@ -134,13 +134,13 @@ class Episode {
 
             overlay.style.display = !ch || !this.visit.vis ? 'flex' : 'none';
             console.log(this.cntTime[this.indx][this.ind], self.visit.count)
-            this.all_episode_vis.src = this.cntTime[this.indx][this.ind] === this.visit.count ? '../Assignment-2/images/eye-green.png' : '../Assignment-2/images/eye-gray.png';
+            this.all_episode_vis.src = this.cntTime[this.indx][this.ind] === this.visit.count ? '../images/eye-green.png' : '../images/eye-gray.png';
             console.log(this.cntTime[this.indx][this.ind], self.visit.count)
            
              this.watchTimeKeeper.covertMin(this.cntTime);
 
         })
-        this.all_episode_vis.src = this.cntTime[this.indx][this.ind] === self.visit.count ? '../Assignment-2/images/eye-green.png' : '../Assignment-2/images/eye-gray.png';
+        this.all_episode_vis.src = this.cntTime[this.indx][this.ind] === self.visit.count ? '../images/eye-green.png' : '../images/eye-gray.png';
         // season_img.addEventListener('click', () =>{
         const changeState = (props) => {
             const ch = this.checkWatched[this.indx][this.ind][this.index];
@@ -161,9 +161,9 @@ class Episode {
             }
             console.log(this.cntTime[this.indx][this.ind], this.visit.count)
             if (this.cntTime[this.indx][this.ind] === this.visit.count) {
-                this.all_episode_vis.src = '../Assignment-2/images/eye-green.png';
+                this.all_episode_vis.src = '../images/eye-green.png';
             } else {
-                this.all_episode_vis.src = '../Assignment-2/images/eye-gray.png';
+                this.all_episode_vis.src = '../images/eye-gray.png';
             }
         }
         epsd_title.innerText = "S" + (this.ind < 10 ? "0" : '') + (this.ind + 1) + "E" + (this.season.number < 10 ? '0' : '') + this.season.number + ": " + this.season.name
