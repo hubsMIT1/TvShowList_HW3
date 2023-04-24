@@ -134,13 +134,13 @@ class Episode {
 
             overlay.style.display = !ch || !this.visit.vis ? 'flex' : 'none';
             console.log(this.cntTime[this.indx][this.ind], self.visit.count)
-            this.all_episode_vis.src = this.cntTime[this.indx][this.ind] === this.visit.count ? '/images/eye-green.png' : '/images/eye-gray.png';
+            this.all_episode_vis.src = this.cntTime[this.indx][this.ind] === this.visit.count ? './images/eye-green.png' : './images/eye-gray.png';
             console.log(this.cntTime[this.indx][this.ind], self.visit.count)
            
              this.watchTimeKeeper.covertMin(this.cntTime);
 
         })
-        this.all_episode_vis.src = this.cntTime[this.indx][this.ind] === self.visit.count ? '/images/eye-green.png' : '/images/eye-gray.png';
+        this.all_episode_vis.src = this.cntTime[this.indx][this.ind] === self.visit.count ? './images/eye-green.png' : './images/eye-gray.png';
         // season_img.addEventListener('click', () =>{
         const changeState = (props) => {
             const ch = this.checkWatched[this.indx][this.ind][this.index];
