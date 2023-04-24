@@ -35,7 +35,7 @@ class Season {
         all_seasons_checkbox.alt = 'eye-img'
         all_seasons_checkbox.className = 'eye-img'
         // console.log(this.cntTime[this.indx][ind])
-        all_seasons_checkbox.src = self.cntTime[self.indx][ind] === self.visit.count ? '/images/eye-green.png' : '/images/eye-gray.png';
+        all_seasons_checkbox.src = self.cntTime[self.indx][ind] === self.visit.count ? './images/eye-green.png' : './images/eye-gray.png';
 
         // all_seasons_checkbox.name = 'all-seasons'
 
