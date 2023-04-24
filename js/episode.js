@@ -31,7 +31,7 @@ class Episode {
         const overlaybox = document.createElement('div');
         const overlay_img = document.createElement('img');
         overlay_img.alt = "watched"
-        const checkimg = '../images/check.png';
+        const checkimg = './images/check.png';
 
         overlay_img.src = checkimg
         overlay.className = `overlay`
@@ -161,9 +161,9 @@ class Episode {
             }
             console.log(this.cntTime[this.indx][this.ind], this.visit.count)
             if (this.cntTime[this.indx][this.ind] === this.visit.count) {
-                this.all_episode_vis.src = '/images/eye-green.png';
+                this.all_episode_vis.src = './images/eye-green.png';
             } else {
-                this.all_episode_vis.src = '/images/eye-gray.png';
+                this.all_episode_vis.src = './images/eye-gray.png';
             }
         }
         epsd_title.innerText = "S" + (this.ind < 10 ? "0" : '') + (this.ind + 1) + "E" + (this.season.number < 10 ? '0' : '') + this.season.number + ": " + this.season.name
